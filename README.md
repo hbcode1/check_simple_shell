@@ -32,7 +32,7 @@ or
 ```sh
 bash check_0.2.sh
 ```
-| :question: *you can modify the path inside the script if you want to run in from other location*
+| :question: *you can modify the path inside the script if you want to run in from other location* <br>
 | :exclamation: your program name must be hsh 
 
 ```sh
