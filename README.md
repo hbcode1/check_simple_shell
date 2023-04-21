@@ -19,14 +19,25 @@ To run the test suite on your code, You can Simply follow this steps.
 - You can either clone the repo in your local machine or download a specific script file
 - Copy the script file in your project root folder
 - Make the script executable
-```chmod u+x check_0.2.sh```
+
+```sh
+chmod u+x check_0.2.sh
+```
 - Finnaly run the script
-```./check_0.2.sh```
+
+```sh
+./check_0.2.sh
+```
 or
-```bash check_0.2.sh```
-:question: *you can modify the path inside the script if you want to run in from other location*
-:exclamation: your program name must be hsh 
-```gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh```
+```sh
+bash check_0.2.sh
+```
+| :question: *you can modify the path inside the script if you want to run in from other location*
+| :exclamation: your program name must be hsh 
+
+```sh
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+```
 
 ### Tests
 
