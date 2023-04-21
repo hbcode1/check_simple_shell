@@ -12,17 +12,25 @@ Your Shell should:
 Handle errors.
 *	You have to handle the “end of file” condition ( Ctrl+D )
 
+File: [Check 0.1](check_0.1.sh)
+
 ### 2. Simple shell 0.2
 ---
 *	Handle command lines with arguments
+	
+File: [Check 0.2](check_0.2.sh)
 
 ### 3. Simple shell 0.3
 ---
 *	Handle the PATH
 *	fork must not be called if the command doesn’t exist
 
+File: [Check 0.3](check_0.3.sh)
+
 ### 4. Simple shell 0.4
 ---
 *	Implement the exit built-in, that exits the shell
 *	Usage: exit
 *	You don’t have to handle any argument to the built-in exit
+
+File: [Check 0.4](check_0.4.sh)
