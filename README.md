@@ -1,7 +1,36 @@
 ## Simple shell Test suite
 ##### A collection of tests for The simple shell project
+This repository contains ongoing developent of test suite for simple shell project.
 
-### 1. Simple shell 0.1
+### Updates
+
+*April 21, 2023*
+- Show test title
+- Fix bug: diff ignore newline
+- Reduce code: adding run_check function
+- Change error output to look more like checker
+- Add character counter (wc)
+- Highlight error output
+
+### Usage
+
+To run the test suite on your code, You can Simply follow this steps.
+
+- You can either clone the repo in your local machine or download a specific script file
+- Copy the script file in your project root folder
+- Make the script executable
+```chmod u+x check_0.2.sh```
+- Finnaly run the script
+```./check_0.2.sh```
+or
+```bash check_0.2.sh```
+:question: *you can modify the path inside the script if you want to run in from other location*
+:exclamation: your program name must be hsh 
+```gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh```
+
+### Tests
+
+#### 1. Simple shell 0.1
 ---
 Your Shell should:
 *	Display a prompt and wait for the user to type a command. A command line always ends with a new line.
@@ -14,20 +43,20 @@ Handle errors.
 
 File: [Check 0.1](check_0.1.sh)
 
-### 2. Simple shell 0.2
+#### 2. Simple shell 0.2
 ---
 *	Handle command lines with arguments
 	
 File: [Check 0.2](check_0.2.sh)
 
-### 3. Simple shell 0.3
+#### 3. Simple shell 0.3
 ---
 *	Handle the PATH
 *	fork must not be called if the command doesn’t exist
 
 File: [Check 0.3](check_0.3.sh)
 
-### 4. Simple shell 0.4
+#### 4. Simple shell 0.4
 ---
 *	Implement the exit built-in, that exits the shell
 *	Usage: exit
