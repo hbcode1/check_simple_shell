@@ -4,7 +4,7 @@ function run_check()
     echo "-->" $1
     chars1=$(wc -m < 1a2b3c4d5e6f7g8h9i)
     chars2=$(wc -m < 1a2b3c4d5e6f7g8h9b)
-    if diff 1a2b3c4d5e6f7g8h9i 1a2b3c4d5e6f7g8h9b >/dev/null || [ "$chars1" == "$chars2" ]; then
+    if diff 1a2b3c4d5e6f7g8h9i 1a2b3c4d5e6f7g8h9b >/dev/null && [ "$chars1" == "$chars2" ]; then
         echo -e "\e[32mSuccess\e[0m"
     else
         echo -e "\e[31mFailed\e[0m"
