@@ -2,8 +2,24 @@
 ##### A collection of tests for The simple shell project
 This repository contains ongoing developent of test suite for simple shell project.
 
+### The script check.sh
+This script: 
+- Compile your project with the following command line :
+```sh
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+```
+- Compares your shell output to `sh` output
+- Runs Betty style check on your `c` and `h` files
+- Runs Betty Documentation check on your `c` and `h` files
+- Clears the generated files.
 ### Updates
 
+*April 24, 2023*
+Last updates
+- Added test for EOF
+- Make test run continuosly
+- Added env test
+- combine all the available test
 *April 21, 2023*
 - Show test title
 - Fix bug: diff ignore newline
@@ -26,17 +42,11 @@ chmod u+x check_0.2.sh
 - Finnaly run the script
 
 ```sh
-./check_0.2.sh
+./check_0.2.sh | less -r
 ```
 or
 ```sh
-bash check_0.2.sh
-```
-| :question: *you can modify the path inside the script if you want to run in from other location* <br>
-| :exclamation: your program name must be hsh 
-
-```sh
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+bash check_0.2.sh | less -r
 ```
 
 ### Tests
@@ -52,20 +62,14 @@ Your Shell should:
 Handle errors.
 *	You have to handle the “end of file” condition ( Ctrl+D )
 
-File: [Check 0.1](check_0.1.sh)
-
 #### 2. Simple shell 0.2
 ---
 *	Handle command lines with arguments
-	
-File: [Check 0.2](check_0.2.sh)
 
 #### 3. Simple shell 0.3
 ---
 *	Handle the PATH
 *	fork must not be called if the command doesn’t exist
-
-File: [Check 0.3](check_0.3.sh)
 
 #### 4. Simple shell 0.4
 ---
@@ -73,4 +77,6 @@ File: [Check 0.3](check_0.3.sh)
 *	Usage: exit
 *	You don’t have to handle any argument to the built-in exit
 
-File: [Check 0.4](check_0.4.sh)
+#### 5. Simple shell 1.0
+---
+*   Implement the env built-in, that prints the current environment
