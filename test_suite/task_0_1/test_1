@@ -1,0 +1,2 @@
+name="/bin/ls x2"
+test="/bin/ls\n/bin/ls"
