@@ -1,38 +1,38 @@
 # Bash scriptting notes
 
-1. Bash script starts with shebang
+### 1. Bash script starts with shebang
 
 ```sh
 #!/bin/bash
 ```
 
-2. Create script file
+### 2. Create script file
 
 ```
 touch script.sh
 ```
 
-3. Find shebang
+### 3. Find shebang
 
 ```
 which bash
 ```
 >*  output: /usr/bin/bash
 
-4. Hello wrold
+### 4. Hello wrold
 
 ```sh
 #!/usr/bin/bash
 echo "Hello World"
 ```
 
-4. Give execution permission to user
+### 4. Give execution permission to user
 
 ```
 chmod u+x script.sh
 ```
 
-5. Run script
+### 5. Run script
 
 ```
 ./script.sh
@@ -46,7 +46,7 @@ bash script.sh
 
 >*  Output: Hello World
 
-6. Define variable
+### 6. Define variable
 
 ```sh
 #!/usr/bin/bash
@@ -57,7 +57,7 @@ echo "I'm $name, and I'm $age years old."
 
 >*  Output:I'm Joe, and I'm 20 years old.
 
-7. Arithmetics
+### 7. Arithmetics
 
 | OP |Use|OP |Use|
 |----|----|----|----|
@@ -65,7 +65,7 @@ echo "I'm $name, and I'm $age years old."
 |-|sub|**|exp|
 |*|mult|%|mod|
 
-8. Calcuation
+### 8. Calcuation
 
 >*  Syntax: var=$((expression))
 
@@ -77,7 +77,7 @@ echo $var
 
 >*  Output: 15
 
-8. Decimal calculation
+### 8. Decimal calculation
 
 use bc command to get decimal output and scale for precision
 
@@ -89,7 +89,7 @@ echo "scale=3;$var" | bc
 
 >*  output: 3.750
 
-9. Read user input
+### 9. Read user input
 
 >*  Syntax: read var_name
 
@@ -99,7 +99,7 @@ read var
 echo $var
 ```
 
-10. Read with prompt
+### 10. Read with prompt
 
 >*  Syntax: read -p prompt var_name
 
